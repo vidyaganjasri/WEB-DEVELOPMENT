@@ -1,0 +1,183 @@
+## HTML Cheat Sheet – Interview Ready
+
+-----
+
+### 1\. HTML Basics
+
+  * **HTML** = **H**yper**T**ext **M**arkup **L**anguage
+      * Gives **structure** to web pages: text, images, videos.
+      * **Markup language** $\rightarrow$ tells browser how content appears
+      * **HyperText** $\rightarrow$ clickable links to other pages
+  * HTML is the foundation; later add CSS & JavaScript
+
+-----
+
+### 2\. HTML Elements
+
+  * Every piece of content is an **element**
+  * **Example:**
+    ```html
+    <p>Hello World!</p>
+    ```
+      * `<p>` $\rightarrow$ **opening tag**
+      * `Hello World!` $\rightarrow$ **content**
+      * `</p>` $\rightarrow$ **closing tag**
+  * **Terms:**
+      * **Tag** = element name inside `< >`
+      * **Content** = text or media inside tags
+      * **Closing tag** = ends the element
+
+-----
+
+### 3\. Body
+
+  * `<body>` $\rightarrow$ contains **all visible page content**
+  * **Example:**
+    ```html
+    <body>
+      <p>Hello!</p>
+    </body>
+    ```
+  * Always put content inside `<body>`
+
+-----
+
+### 4\. Hierarchy / Nesting
+
+  * Elements can be inside other elements $\rightarrow$ **parent-child**
+  * **Example:**
+    ```html
+    <body>
+      <div>
+        <h1>Title</h1>
+        <p>Paragraph</p>
+      </div>
+    </body>
+    ```
+      * `<body>` $\rightarrow$ parent of `<div>`
+      * `<div>` $\rightarrow$ parent of `<h1>` & `<p>`
+      * `<h1>` & `<p>` $\rightarrow$ **siblings**
+  * Helps **organize content** & apply styling
+
+-----
+
+### 5\. Headings
+
+  * **Six levels**: `<h1>` $\rightarrow$ `<h6>` (**biggest** $\rightarrow$ **smallest**)
+  * Titles for sections or articles
+  * **Example:**
+    ```html
+    <h1>BREAKING NEWS</h1>
+    ```
+
+-----
+
+### 6\. Divs
+
+  * `<div>` $\rightarrow$ **division/container** for grouping elements
+  * Useful for **structure** & **custom styling**
+  * No default visual style
+  * Can contain text, images, videos, links, other elements
+  * Always **indent** nested elements
+  * **Example:**
+    ```html
+    <div>
+      <h1>Why use divs?</h1>
+      <p>Great for grouping elements!</p>
+    </div>
+    ```
+
+-----
+
+### 7\. Attributes
+
+  * **Extra info** added to an **opening tag**
+  * **Format**: `name="value"`
+  * **Example**: `id` $\rightarrow$ unique identifier for element
+  * **Example:**
+    ```html
+    <div id="intro">
+      <h1>Introduction</h1>
+    </div>
+    ```
+
+-----
+
+### 8\. Displaying Text
+
+  * `<p>` $\rightarrow$ **block** of text
+  * `<span>` $\rightarrow$ small **inline** text, part of a line
+  * **Example:**
+    ```html
+    <p><span>Self-driving cars</span> may replace many jobs.</p>
+    ```
+
+-----
+
+### 9\. Styling Text
+
+  * `<em>` $\rightarrow$ **emphasizes** text (*italics*)
+  * `<strong>` $\rightarrow$ **important** text (**bold**)
+  * **Example:**
+    ```html
+    <p><strong>The Nile River</strong> is the <em>longest</em> river.</p>
+    ```
+
+-----
+
+### 10\. Line Breaks
+
+  * `<br>` $\rightarrow$ **line break** (**no closing tag needed**)
+  * **Example:**
+    ```html
+    <p>The Nile River is the longest river <br> in the world.</p>
+    ```
+
+-----
+
+### 11\. Lists
+
+  * **Unordered List** (bullets):
+    ```html
+    <ul>
+      <li>Limes</li>
+      <li>Tortillas</li>
+      <li>Chicken</li>
+    </ul>
+    ```
+  * **Ordered List** (numbers):
+    ```html
+    <ol>
+      <li>Preheat oven</li>
+      <li>Mix ingredients</li>
+    </ol>
+    ```
+
+-----
+
+### 12\. Images
+
+  * `<img>` $\rightarrow$ adds an image (**self-closing**)
+  * **Required**: `src` $\rightarrow$ image location
+  * **Optional**: `alt` $\rightarrow$ description for accessibility & SEO
+  * **Example:**
+    ```html
+    <img src="sunflowers.jpg" alt="A field of yellow sunflowers" />
+    ```
+
+-----
+
+### 13\. Videos
+
+  * `<video>` $\rightarrow$ adds a video (**needs opening & closing tags**)
+  * **Attributes**:
+      * `src` $\rightarrow$ video file location
+      * `width` / `height` $\rightarrow$ size
+      * `controls` $\rightarrow$ play/pause buttons
+  * **Text between tags** $\rightarrow$ shown if video fails to load
+  * **Example:**
+    ```html
+    <video src="myVideo.mp4" width="320" height="240" controls>
+      Video not supported
+    </video>
+    ```
